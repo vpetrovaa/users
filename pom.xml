@@ -30,6 +30,7 @@
 		<openfeign.version>4.0.1</openfeign.version>
 		<r2dbc.version>1.0.0.RELEASE</r2dbc.version>
 		<crypto.version>6.0.2</crypto.version>
+		<eureka.version>4.0.0</eureka.version>
 	</properties>
 
 	<dependencies>
@@ -103,6 +104,12 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-crypto</artifactId>
 			<version>${crypto.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>${eureka.version}</version>
 		</dependency>
 
 	</dependencies>
