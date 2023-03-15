@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
@@ -35,6 +37,11 @@ public class UserServiceImpl implements UserService {
                     user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
                     return userRepository.save(user);
                 });
+    }
+
+    @Override
+    public Flux<User> createAll(List<User> users) {
+        return userRepository.saveAll(users);
     }
 
     @Override

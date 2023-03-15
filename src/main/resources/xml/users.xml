@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user>
+        <email>dasha@mail.ru</email>
+        <password>dasha123</password>
+        <name>dasha</name>
+        <surname>dasha</surname>
+        <phone>375295647354</phone>
+        <birthday>2023-03-14</birthday>
+    </user>
+    <user>
+        <email>katya@mail.ru</email>
+        <password>katya123</password>
+        <name>katya</name>
+        <surname>katya</surname>
+        <phone>375291726357</phone>
+        <birthday>2014-02-02</birthday>
+    </user>
+    <user>
+        <email>alina@mail.ru</email>
+        <password>alina123</password>
+        <name>alina</name>
+        <surname>alina</surname>
+        <phone>375295638563</phone>
+        <birthday>2001-10-23</birthday>
+    </user>
+    <user>
+        <email>bob@mail.ru</email>
+        <password>bob123</password>
+        <name>bob</name>
+        <surname>bob</surname>
+        <phone>375445372845</phone>
+        <birthday>2005-11-12</birthday>
+    </user>
+    <user>
+        <email>zhenya@mail.ru</email>
+        <password>zhenya123</password>
+        <name>zhenya</name>
+        <surname>zhenya</surname>
+        <phone>375298574836</phone>
+        <birthday>1988-06-07</birthday>
+    </user>
+</users>
