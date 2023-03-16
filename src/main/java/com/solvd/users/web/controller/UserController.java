@@ -8,9 +8,11 @@ import com.solvd.users.web.mapper.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.io.File;
 import java.util.List;
 
 @RestController
@@ -42,8 +44,8 @@ public class UserController {
     }
 
     @PostMapping("/parser")
-    public Flux<UserDto> createAll(@RequestParam String filename) {
-        List<User> usersParsed = jaxbParser.parse(filename);
+    public Flux<UserDto> createAll(@RequestParam MultipartFile file) {
+        List<User> usersParsed = jaxbParser.parse(file);
         Flux<User> users = userService.createAll(usersParsed);
         return users.map(userMapper::entityToDto);
     }
