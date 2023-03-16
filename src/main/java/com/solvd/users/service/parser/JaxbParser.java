@@ -8,4 +8,5 @@ import java.util.List;
 public interface JaxbParser {
 
     List<User> parse(MultipartFile file);
+
 }
